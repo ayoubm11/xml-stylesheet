@@ -1,0 +1,350 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<http-codes>
+	<catégories>
+		<catégorie numéro = "1" type = "Information">Codes commençant par 1</catégorie>
+		<catégorie numéro = "2" type = "Succès">Codes commençant par 2</catégorie>
+		<catégorie numéro = "3" type = "Redirection">Codes commençant par 3</catégorie>
+		<catégorie numéro = "4" type = "Erreur client">Codes commençant par 4</catégorie>
+		<catégorie numéro = "5" type = "Erreur serveur">Codes commençant par 5</catégorie>
+	</catégories>
+	<codes>
+		<http-code code="100">
+		  <message>Continue</message>
+		  <signification>Attente de la suite de la requête.</signification>
+		</http-code>
+		<http-code code="101">
+		  <message>Switching Protocols</message>
+		  <signification>Acceptation du changement de protocole.</signification>
+		</http-code>
+		<http-code code="102">
+		  <message>Processing</message>
+		  <signification>Traitement en cours (évite que le client dépasse le temps d’attente limite).</signification>
+		</http-code>
+		<http-code code="103">
+		  <message>Early Hints</message>
+		  <signification>(Expérimental) Dans l'attente de la réponse définitive, le serveur renvoie des liens que le client peut commencer à télécharger.</signification>
+		</http-code>
+		<http-code code="200">
+		  <message>OK</message>
+		  <signification>Requête traitée avec succès. La réponse dépendra de la méthode de requête utilisée.</signification>
+		</http-code>
+		<http-code code="201">
+		  <message>Created</message>
+		  <signification>Requête traitée avec succès et création d’un document.</signification>
+		</http-code>
+		<http-code code="202">
+		  <message>Accepted</message>
+		  <signification>Requête traitée, mais sans garantie de résultat.</signification>
+		</http-code>
+		<http-code code="203">
+		  <message>Non-Authoritative Information</message>
+		  <signification>Information renvoyée, mais générée par une source non certifiée.</signification>
+		</http-code>
+		<http-code code="204">
+		  <message>No Content</message>
+		  <signification>Requête traitée avec succès mais pas d’information à renvoyer.</signification>
+		</http-code>
+		<http-code code="205">
+		  <message>Reset Content</message>
+		  <signification>Requête traitée avec succès, la page courante peut être effacée.</signification>
+		</http-code>
+		<http-code code="206">
+		  <message>Partial Content</message>
+		  <signification>Une partie seulement de la ressource a été transmise.</signification>
+		</http-code>
+		<http-code code="207">
+		  <message>Multi-Status</message>
+		  <signification>Réponse multiple.</signification>
+		</http-code>
+		<http-code code="208">
+		  <message>Already Reported</message>
+		  <signification>Le document a été envoyé précédemment dans cette collection.</signification>
+		</http-code>
+		<http-code code="210">
+		  <message>Content Different</message>
+		  <signification>La copie de la ressource côté client diffère de celle du serveur (contenu ou propriétés).</signification>
+		</http-code>
+		<http-code code="226">
+		  <message>IM Used</message>
+		  <signification>Le serveur a accompli la requête pour la ressource, et la réponse est une représentation du résultat d'une ou plusieurs manipulations d'instances appliquées à l'instance actuelle.</signification>
+		</http-code>
+		<http-code code="300">
+		  <message>Multiple Choices</message>
+		  <signification>L’URIdemandée se rapporte à plusieurs ressources.</signification>
+		</http-code>
+		<http-code code="301">
+		  <message>Moved Permanently</message>
+		  <signification>Document déplacé de façon permanente.</signification>
+		</http-code>
+		<http-code code="302">
+		  <message>Found</message>
+		  <signification>Document déplacé de façon temporaire.</signification>
+		</http-code>
+		<http-code code="303">
+		  <message>See Other</message>
+		  <signification>La réponse à cette requête est ailleurs.</signification>
+		</http-code>
+		<http-code code="304">
+		  <message>Not Modified</message>
+		  <signification>Document non modifié depuis la dernière requête.</signification>
+		</http-code>
+		<http-code code="305">
+		  <message>Use Proxy</message>
+		  <signification>La requête doit être ré-adressée auproxy.</signification>
+		</http-code>
+		<http-code code="306">
+		  <signification>LaRFC 2616 indique que ce code inutilisé est réservé, car il était utilisé dans une ancienne version de la spécification. Il signifiait « Les requêtes suivantes doivent utiliser le proxy spécifié » .</signification>
+		</http-code>
+		<http-code code="307">
+		  <message>Temporary Redirect</message>
+		  <signification>La requête doit être redirigée temporairement vers l’URIspécifiée sans changement de méthode .</signification>
+		</http-code>
+		<http-code code="308">
+		  <message>Permanent Redirect</message>
+		  <signification>La requête doit être redirigée définitivement vers l’URIspécifiée sans changement de méthode .</signification>
+		</http-code>
+		<http-code code="310">
+		  <message>Too many Redirects</message>
+		  <signification>La requête doit être redirigée de trop nombreuses fois, ou est victime d’une boucle de redirection.</signification>
+		</http-code>
+		<http-code code="400">
+		  <message>Bad Request</message>
+		  <signification>La syntaxe de la requête est erronée.</signification>
+		</http-code>
+		<http-code code="401">
+		  <message>Unauthorized</message>
+		  <signification>Une authentification est nécessaire pour accéder à la ressource.</signification>
+		</http-code>
+		<http-code code="402">
+		  <message>Payment Required</message>
+		  <signification>Paiement requis pour accéder à la ressource.</signification>
+		</http-code>
+		<http-code code="403">
+		  <message>Forbidden</message>
+		  <signification>Le serveur a compris la requête, mais refuse de l'exécuter. Contrairement à l'erreur 401, s'authentifier ne fera aucune différence. Sur les serveurs où l'authentification est requise, cela signifie généralement que l'authentification a été acceptée mais que les droits d'accès ne permettent pas au client d'accéder à la ressource.</signification>
+		</http-code>
+		<http-code code="404">
+		  <message>Not Found</message>
+		  <signification>Ressource non trouvée.</signification>
+		</http-code>
+		<http-code code="405">
+		  <message>Method Not Allowed</message>
+		  <signification>Méthode de requête non autorisée.</signification>
+		</http-code>
+		<http-code code="406">
+		  <message>Not Acceptable</message>
+		  <signification>La ressource demandée n'est pas disponible dans un format qui respecterait les en-têtes « Accept » de la requête.</signification>
+		</http-code>
+		<http-code code="407">
+		  <message>Proxy Authentication Required</message>
+		  <signification>Accès à la ressource autorisé par identification avec le proxy.</signification>
+		</http-code>
+		<http-code code="408">
+		  <message>Request Time-out</message>
+		  <signification>Temps d’attente d’une requête du client, écoulé côté serveur. D'après les spécifications HTTP : « Le client n'a pas produit de requête dans le délai que le serveur était prêt à attendre. Le client PEUT répéter la demande sans modifications à tout moment ultérieur » .</signification>
+		</http-code>
+		<http-code code="409">
+		  <message>Conflict</message>
+		  <signification>La requête ne peut être traitée à la suite d'un conflit avec l'état actuel du serveur.</signification>
+		</http-code>
+		<http-code code="410">
+		  <message>Gone</message>
+		  <signification>La ressource n'est plus disponible et aucune adresse de redirection n’est connue.</signification>
+		</http-code>
+		<http-code code="411">
+		  <message>Length Required</message>
+		  <signification>La longueur de la requête n’a pas été précisée.</signification>
+		</http-code>
+		<http-code code="412">
+		  <message>Precondition Failed</message>
+		  <signification>Préconditions envoyées par la requête non vérifiées.</signification>
+		</http-code>
+		<http-code code="413">
+		  <message>Request Entity Too Large</message>
+		  <signification>Traitement abandonné dû à une requête trop importante.</signification>
+		</http-code>
+		<http-code code="414">
+		  <message>Request-URI Too Long</message>
+		  <signification>URItrop longue.</signification>
+		</http-code>
+		<http-code code="415">
+		  <message>Unsupported Media Type</message>
+		  <signification>Format de requête non supporté pour une méthode et une ressource données.</signification>
+		</http-code>
+		<http-code code="416">
+		  <message>Requested range unsatisfiable</message>
+		  <signification>Champs d’en-tête de requête « range » incorrect.</signification>
+		</http-code>
+		<http-code code="417">
+		  <message>Expectation failed</message>
+		  <signification>Comportement attendu et défini dans l’en-tête de la requête insatisfaisante.</signification>
+		</http-code>
+		<http-code code="418">
+		  <message>I’m a teapot</message>
+		  <signification>« Je suis une théière » : Ce code est défini dans laRFC 2324 datée du1eravril1998,Hyper Text Coffee Pot Control Protocol.</signification>
+		</http-code>
+		<http-code code="419">
+		  <message>Page expired</message>
+		  <signification>Ressource expirée</signification>
+		</http-code>
+		<http-code code="421">
+		  <message>Bad mapping / Misdirected Request</message>
+		  <signification>La requête a été envoyée à un serveur qui n'est pas capable de produire une réponse (par exemple, car une connexion a été réutilisée).</signification>
+		</http-code>
+		<http-code code="422">
+		  <message>Unprocessable entity</message>
+		  <signification>L’entité fournie avec la requête est incompréhensible ou incomplète.</signification>
+		</http-code>
+		<http-code code="423">
+		  <message>Locked</message>
+		  <signification>L’opération ne peut avoir lieu car la ressource est verrouillée.</signification>
+		</http-code>
+		<http-code code="424">
+		  <message>Method failure</message>
+		  <signification>Une méthode de la transaction a échoué.</signification>
+		</http-code>
+		<http-code code="425">
+		  <message>Too Early</message>
+		  <signification>Le serveur ne peut traiter la demande car elle risque d'être rejouée.</signification>
+		</http-code>
+		<http-code code="426">
+		  <message>Upgrade Required</message>
+		  <signification>Le client devrait changer de protocole, par exemple au profit deTLS/1.0.</signification>
+		</http-code>
+		<http-code code="427">
+		  <signification>La signature numérique du document est non-valide.</signification>
+		</http-code>
+		<http-code code="428">
+		  <message>Precondition Required</message>
+		  <signification>RFC 6585  : La requête doit être conditionnelle.</signification>
+		</http-code>
+		<http-code code="429">
+		  <message>Too Many Requests</message>
+		  <signification>le client a émis trop de requêtes dans un délai donné.</signification>
+		</http-code>
+		<http-code code="431">
+		  <message>Request Header Fields Too Large</message>
+		  <signification>Les entêtes HTTP émises dépassent la taille maximale admise par le serveur.</signification>
+		</http-code>
+		<http-code code="449">
+		  <message>Retry With</message>
+		  <signification>La requête devrait être renvoyée après avoir effectué une action.</signification>
+		</http-code>
+		<http-code code="450">
+		  <message>Blocked by Windows Parental Controls</message>
+		  <signification>Cette erreur est produite lorsque les outils de contrôle parental deMicrosoft Windowssont activés et bloquent l’accès à la page.</signification>
+		</http-code>
+		<http-code code="451">
+		  <message>Unavailable For Legal Reasons</message>
+		  <signification>La ressource demandée est inaccessible pour des raisons d'ordre légal.</signification>
+		</http-code>
+		<http-code code="456">
+		  <message>Unrecoverable Error</message>
+		  <signification>WebDAV : Erreur irrécupérable.</signification>
+		</http-code>
+		<http-code code="444">
+		  <message>No Response</message>
+		  <signification>Indique que le serveur n'a retourné aucune information vers le client et a fermé la connexion.</signification>
+		</http-code>
+		<http-code code="495">
+		  <message>SSLCertificate Error</message>
+		  <signification>Une extension de l'erreur 400Bad Request, utilisée lorsque le client a fourni un certificat invalide.</signification>
+		</http-code>
+		<http-code code="496">
+		  <message>SSLCertificate Required</message>
+		  <signification>Une extension de l'erreur 400Bad Request, utilisée lorsqu'un certificat client requis n'est pas fourni.</signification>
+		</http-code>
+		<http-code code="497">
+		  <message>HTTPRequest Sent toHTTPSPort</message>
+		  <signification>Une extension de l'erreur 400Bad Request, utilisée lorsque le client envoie une requête HTTP vers le port 443 normalement destiné aux requêtes HTTPS.</signification>
+		</http-code>
+		<http-code code="498">
+		  <message>Token expired invalid</message>
+		  <signification>Le jeton a expiré ou est invalide.</signification>
+		</http-code>
+		<http-code code="499">
+		  <message>Client Closed Request</message>
+		  <signification>Le client a fermé la connexion avant de recevoir la réponse. Cette erreur se produit quand le traitement est trop long côté serveur .</signification>
+		</http-code>
+		<http-code code="500">
+		  <message>Internal Server Error</message>
+		  <signification>Erreur internedu serveur.</signification>
+		</http-code>
+		<http-code code="501">
+		  <message>Not Implemented</message>
+		  <signification>Fonctionnalité réclamée non supportée par le serveur.</signification>
+		</http-code>
+		<http-code code="502">
+		  <message>Bad Gateway Proxy Error</message>
+		  <signification>En agissant en tant que serveur proxy ou passerelle, le serveur a reçu une réponse invalide depuis le serveur distant.</signification>
+		</http-code>
+		<http-code code="503">
+		  <message>Service Unavailable</message>
+		  <signification>Service temporairement indisponible ou en maintenance.</signification>
+		</http-code>
+		<http-code code="504">
+		  <message>Gateway Time-out</message>
+		  <signification>Temps d’attente d’une réponse d’un serveur à un serveur intermédiaire écoulé.</signification>
+		</http-code>
+		<http-code code="505">
+		  <message>HTTP Version not supported</message>
+		  <signification>VersionHTTPnon gérée par le serveur.</signification>
+		</http-code>
+		<http-code code="506">
+		  <message>Variant Also Negotiates</message>
+		  <signification>Erreur de négociation.Transparent content negociation.</signification>
+		</http-code>
+		<http-code code="507">
+		  <message>Insufficient storage</message>
+		  <signification>Espace insuffisant pour modifier les propriétés ou construire la collection.</signification>
+		</http-code>
+		<http-code code="508">
+		  <message>Loop detected</message>
+		  <signification>Boucle dans une mise en relation de ressources (RFC 5842 ).</signification>
+		</http-code>
+		<http-code code="509">
+		  <message>Bandwidth Limit Exceeded</message>
+		  <signification>Utilisé par de nombreux serveurs pour indiquer un dépassement de quota.</signification>
+		</http-code>
+		<http-code code="510">
+		  <message>Not extended</message>
+		  <signification>La requête ne respecte pas la politique d'accès aux ressources HTTP étendues.</signification>
+		</http-code>
+		<http-code code="511">
+		  <message>Network authentication required</message>
+		  <signification>Le client doit s'authentifier pour accéder au réseau. Utilisé par les portails captifs pour rediriger les clients vers la page d'authentification.</signification>
+		</http-code>
+		<http-code code="520">
+		  <message>Unknown Error</message>
+		  <signification>Réponse générique lorsque le serveur d'origine retourne un résultat imprévu.</signification>
+		</http-code>
+		<http-code code="521">
+		  <message>Web Server Is Down</message>
+		  <signification>Le serveur a refusé la connexion depuis Cloudflare.</signification>
+		</http-code>
+		<http-code code="522">
+		  <message>Connection Timed Out</message>
+		  <signification>Cloudflare n'a pas eu de retour avec le serveur d'origine dans les temps.</signification>
+		</http-code>
+		<http-code code="523">
+		  <message>Origin Is Unreachable</message>
+		  <signification>Cloudflare n'a pas réussi à joindre le serveur d'origine. Cela peut se produire en cas d'échec de résolution de nom de serveur DNS.</signification>
+		</http-code>
+		<http-code code="524">
+		  <message>A Timeout Occurred</message>
+		  <signification>Cloudflare a établi une connexion TCP avec le serveur d'origine mais n'a pas reçu de réponse HTTP avant l'expiration du délai de connexion.</signification>
+		</http-code>
+		<http-code code="525">
+		  <message>SSL Handshake Failed</message>
+		  <signification>Cloudflare n'a pas pu négocier un SSL/TLS handshakeavec le serveur d'origine.</signification>
+		</http-code>
+		<http-code code="526">
+		  <message>Invalid SSL Certificate</message>
+		  <signification>Cloudflare n'a pas pu valider le certificat SSL présenté par le serveur d'origine.</signification>
+		</http-code>
+		<http-code code="527">
+		  <message>Railgun Error</message>
+		  <signification>La requête a dépassé le délai de connexion ou a échoué après que la connexion WAN a été établie.</signification>
+		</http-code>
+	</codes>
+</http-codes>
